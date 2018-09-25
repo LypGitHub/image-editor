@@ -1,6 +1,15 @@
 {
-    "presets": ["stage-2", "es2015-rollup"],
-    "plugins": ["transform-runtime"],
-    "comments": false
-  }
+    "presets": [
+        [
+            "env",
+            {
+                "modules": false,
+                "targets": {
+                    "chrome": 49
+                },
+                "include": ["transform-es2015-classes"]
+            }
+        ]
+    ]
+}
   

@@ -4,7 +4,6 @@ import json from 'rollup-plugin-json';
 import typescript from 'typescript';
 import rollupTypescript from 'rollup-plugin-typescript';
 import replace from 'rollup-plugin-replace';
-import babel from 'rollup-plugin-babel';
 import { main, module, browser } from '../package.json';
 
 const env = process.env.NODE_ENV;
@@ -17,7 +16,6 @@ const plugins = [
     replace({
         'process.env.NODE_ENV': JSON.stringify(env),
     }),
-    babel(),
 ];
 
 export default [
