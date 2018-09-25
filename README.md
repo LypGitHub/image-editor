@@ -1,7 +1,5 @@
 ### A edit tool for image
 
-demo的启动依赖于`parcel`，需全局安装后才可使用。
-
 ```bash
 // 安装依赖
 npm install
