@@ -1,9 +1,7 @@
-function test(num: number): void {
-    console.log(num);
-    console.log({
-        ...{ demo: 1 }
-    });
-}
+import * as core from './core';
+import * as views from './views';
 
-test(1);
-export default test;
+export default {
+    ...core,
+    ...views,
+}
